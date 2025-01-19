@@ -1,1 +1,1 @@
-# HW5-Multithreaded-Matrix-Multiplication
+# HW-Multithreaded-Matrix-Multiplication
