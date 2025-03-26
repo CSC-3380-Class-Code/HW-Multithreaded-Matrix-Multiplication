@@ -103,7 +103,7 @@ namespace Multithreading
             paraMS = watch.ElapsedMilliseconds;
 
             Assert.True(CheckMatrixEquality(sequential, parallel));
-            Assert.True(paraMS/seqMS*100 < 70);
+            Assert.True((double)paraMS/seqMS*100 < 70);
         }
 
         [TestCase(8)]
@@ -124,7 +124,7 @@ namespace Multithreading
             paraMS = watch.ElapsedMilliseconds;
 
             Assert.True(CheckMatrixEquality(sequential, parallel));
-            Assert.True(paraMS/seqMS*100 < 70);
+            Assert.True((double)paraMS/seqMS*100 < 70);
         }
     }
 }
